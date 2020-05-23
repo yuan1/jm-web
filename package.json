@@ -1,0 +1,27 @@
+{
+  "name": "jm-web",
+  "version": "1.0.0",
+  "description": "Simple Web using Gulp 4",
+  "main": "gulpfile.js",
+  "author": "hua2",
+  "license": "ISC",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.0",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
+  }
+}

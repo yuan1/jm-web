@@ -1,0 +1,15 @@
+@import 'global';
+@import 'scrollbar';
+@import 'utilities';
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
