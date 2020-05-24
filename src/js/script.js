@@ -49,7 +49,7 @@ window.addEventListener('scroll', function (e) {
     top_btn.style.display = 'block'
   }
   if (!is_top) {
-    clearInterval(timer)
+    clearInterval(top_timer)
   }
   is_top = false
 })
@@ -68,4 +68,11 @@ top_btn.onclick = function () {
       clearInterval(top_timer)
     }
   }, 30)
+}
+
+function close_mobile_nav(){
+  document.getElementById('mobile').classList.remove('show')
+}
+function show_mobile_nav(){
+  document.getElementById('mobile').classList.add('show')
 }

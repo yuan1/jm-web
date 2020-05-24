@@ -33,6 +33,19 @@
         <div class="header-search">
           <img src="./img/search-icon.png" alt="" />
         </div>
+        <div class="header-menu" onclick="show_mobile_nav()">=</div>
+      </div>
+      <div class="mobile-nav" id="mobile">
+        <ul>
+          <li><a href="#">网站首页</a></li>
+          <li><a href="#">新闻资讯</a></li>
+          <li><a href="#">会议活动</a></li>
+          <li><a href="#">角马视频</a></li>
+          <li><a href="#">角马评价</a></li>
+          <li><a href="#">供应商联盟</a></li>
+          <li><a href="#">APP下载</a></li>
+        </ul>
+        <div class="mobile-close" onclick="close_mobile_nav()">X</div>
       </div>
     </div>
     <div class="swiper-container" id="index-swiper">
@@ -124,80 +137,78 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-    <div class="contain pt-12">
-      <div class="flex justify-between">
-        <div class="contain-left pt-12">
-          <ul>
-            <li><a href="#">推荐·要闻</a></li>
-            <li><a href="#">装备制造</a></li>
-            <li><a href="#">物资采购</a></li>
-            <li><a href="#">供应链</a></li>
-            <li><a href="#">油气</a></li>
-            <li><a href="#">风电</a></li>
-            <li><a href="#">电力</a></li>
-            <li><a href="#">氢能</a></li>
-            <li><a href="#">储能</a></li>
-            <li><a href="#">核电</a></li>
-          </ul>
-          <div class="c-l-article flex">
-            <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-              alt=""
-            />
-            <div>
-              <h2><a href="#">国铁资本拟入股银行　铁路混改再下一城</a></h2>
-              <div class="c-l-info">
-                5月19日，中国国家铁路集团有限公司（下称“国铁集团”）下属中国铁路投资有限公司（下称“铁路投资公司”）与海...
-              </div>
-              <p>
-                2020-05-21
-              </p>
+    <div class="pt-12 flex justify-between contain">
+      <div class="contain-left">
+        <ul>
+          <li><a href="#">推荐·要闻</a></li>
+          <li><a href="#">装备制造</a></li>
+          <li><a href="#">物资采购</a></li>
+          <li><a href="#">供应链</a></li>
+          <li><a href="#">油气</a></li>
+          <li><a href="#">风电</a></li>
+          <li><a href="#">电力</a></li>
+          <li><a href="#">氢能</a></li>
+          <li><a href="#">储能</a></li>
+          <li><a href="#">核电</a></li>
+        </ul>
+        <div class="c-l-article flex">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            alt=""
+          />
+          <div class="relative">
+            <h2><a href="#">国铁资本拟入股银行　铁路混改再下一城</a></h2>
+            <div class="c-l-info">
+              5月19日，中国国家铁路集团有限公司（下称“国铁集团”）下属中国铁路投资有限公司（下称“铁路投资公司”）与海...
             </div>
+            <p>
+              2020-05-21
+            </p>
           </div>
         </div>
-        <div class="contain-right">
-          <div>
-            <h3>角马-视频</h3>
+      </div>
+      <div class="contain-right">
+        <div class="w-full">
+          <h3>角马-视频</h3>
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            alt=""
+          />
+          <div class="c-r-video flex justify-between">
             <img
               src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
               alt=""
             />
-            <div class="c-r-video flex justify-between">
-              <img
-                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-                alt=""
-              />
-              <img
-                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-                alt=""
-              />
-            </div>
-            <div class="c-r-video flex justify-between">
-              <img
-                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-                alt=""
-              />
-              <img
-                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-                alt=""
-              />
-            </div>
+            <img
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              alt=""
+            />
           </div>
-          <div>
-            <h3>供应链管理</h3>
+          <div class="c-r-video flex justify-between">
             <img
               src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
               alt=""
             />
-            <div class="c-r-manager mt-12 mb-12 flex justify-between">
-              <img
-                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
-                alt=""
-              />
-              <div class="ml-16">
-                <h4>陕汽集团三次创业拼搏以成 四新并进决胜长远</h4>
-                <span>2020-05-21</span>
-              </div>
+            <img
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="w-full">
+          <h3>供应链管理</h3>
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            alt=""
+          />
+          <div class="c-r-manager mt-12 mb-12 flex justify-between">
+            <img
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              alt=""
+            />
+            <div class="ml-16">
+              <h4>陕汽集团三次创业拼搏以成 四新并进决胜长远</h4>
+              <span>2020-05-21</span>
             </div>
           </div>
         </div>
