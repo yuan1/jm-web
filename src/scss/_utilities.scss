@@ -6498,6 +6498,14 @@ float: https://tailwindcss.com/docs/float
   white-space: nowrap;
 }
 
+.truncate-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .w-0 {
   width: 0;
 }
