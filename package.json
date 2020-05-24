@@ -19,9 +19,10 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^7.1.0"
+    "swiper": "^5.4.1"
   }
 }

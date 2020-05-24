@@ -1,60 +1,71 @@
 console.log('Load script.js')
 
+window.onload = function () {
+  var indexSwiper = new Swiper('#index-swiper', {
+    speed: 1000,
+    longSwipes: false,
+    loop: true,
+    autoplay: {
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  })
+}
+//顶部隐藏
 var new_scroll_position = 0
 var last_scroll_position
 var header = document.getElementById('header')
 
+//返回顶部
+var top_btn = document.getElementById('top-btn')
+var top_timer = null
+var is_top = true
+
 window.addEventListener('scroll', function (e) {
   last_scroll_position = window.scrollY
-
   // 向下滚动
   if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
-    header.classList.remove('slideDown')
-    header.classList.add('slideUp')
+    header.classList.remove('slide-down')
+    header.classList.add('slide-up')
 
     // 向上滚动
   } else if (new_scroll_position > last_scroll_position) {
-    header.classList.remove('slideUp')
-    header.classList.add('slideDown')
+    header.classList.remove('slide-up')
+    header.classList.add('slide-down')
   }
-
   new_scroll_position = last_scroll_position
-})
-//返回顶部
-var obtn = document.getElementById('btn')
-var timer = null
-var isTop = true
-//获取页面的可视窗口高度
-var clientHeight =
-  document.documentElement.clientHeight || document.body.clientHeight
-//滚动条滚动时触发
-window.onscroll = function () {
-  //在滚动的时候增加判断
-  var osTop = document.documentElement.scrollTop || document.body.scrollTop //特别注意这句，忘了的话很容易出错
-  if (osTop == 0) {
-    obtn.style.display = 'none'
+  //返回顶部 在滚动的时候增加判断
+  var os_top = document.documentElement.scrollTop || document.body.scrollTop //特别注意这句，忘了的话很容易出错
+  if (os_top == 0) {
+    top_btn.style.display = 'none'
   } else {
-    obtn.style.display = 'block'
+    top_btn.style.display = 'block'
   }
-  if (!isTop) {
+  if (!is_top) {
     clearInterval(timer)
   }
-  isTop = false
-}
-btn.onclick = function () {
+  is_top = false
+})
+top_btn.onclick = function () {
   //设置定时器
-  timer = setInterval(function () {
+  top_timer = setInterval(function () {
     //获取滚动条距离顶部的高度
-    var osTop = document.documentElement.scrollTop || document.body.scrollTop //同时兼容了ie和Chrome浏览器
+    var os_top = document.documentElement.scrollTop || document.body.scrollTop //同时兼容了ie和Chrome浏览器
     //减小的速度
-    var isSpeed = Math.floor(-osTop / 6)
+    var isSpeed = Math.floor(-os_top / 6)
     document.documentElement.scrollTop = document.body.scrollTop =
-      osTop + isSpeed
-    //console.log( osTop + isSpeed);
+    os_top + isSpeed
     isTop = true
     //判断，然后清除定时器
-    if (osTop == 0) {
-      clearInterval(timer)
+    if (os_top == 0) {
+      clearInterval(top_timer)
     }
   }, 30)
 }
