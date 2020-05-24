@@ -74,10 +74,10 @@ body {
       height: 40px;
       line-height: 40px;
       font-size: 30px;
+      display: none;
     }
   }
   .mobile-nav {
-    display: block;
     visibility: hidden;
     opacity: 0;
     transition: visibility ease-in-out 0.3s, opacity ease-in-out 0.3s;
@@ -494,7 +494,7 @@ body {
   .contain .contain-left .c-l-article h2 {
     font-size: 14px;
   }
-  .mobile-nav {
-    display: block;
+  .header-menu {
+    display: block !important;
   }
 }
