@@ -1,7 +1,7 @@
 console.log('Load script.js')
 
 window.onload = function () {
-  var indexSwiper = new Swiper('#index-swiper', {
+  var index_swiper = new Swiper('#index-swiper', {
     speed: 1000,
     longSwipes: false,
     loop: true,
@@ -15,7 +15,7 @@ window.onload = function () {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    }
+    },
   })
 }
 //顶部隐藏
@@ -61,7 +61,7 @@ top_btn.onclick = function () {
     //减小的速度
     var isSpeed = Math.floor(-os_top / 6)
     document.documentElement.scrollTop = document.body.scrollTop =
-    os_top + isSpeed
+      os_top + isSpeed
     isTop = true
     //判断，然后清除定时器
     if (os_top == 0) {
@@ -70,9 +70,22 @@ top_btn.onclick = function () {
   }, 30)
 }
 
-function close_mobile_nav(){
+function close_mobile_nav() {
   document.getElementById('mobile').classList.remove('show')
 }
-function show_mobile_nav(){
+function show_mobile_nav() {
   document.getElementById('mobile').classList.add('show')
+}
+
+function close_dialog_search() {
+  document.body.style.overflow = 'auto'
+  document.getElementById('search-close').style.display = 'none'
+  document.getElementById('search-btn').style.display = 'block'
+  document.getElementById('search').style.display = 'none'
+}
+function show_dialog_search() {
+  document.body.style.overflow = 'hidden'
+  document.getElementById('search-close').style.display = 'block'
+  document.getElementById('search-btn').style.display = 'none'
+  document.getElementById('search').style.display = 'block'
 }

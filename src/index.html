@@ -22,7 +22,7 @@
       <div class="header-content flex items-center">
         <img src="./img/logo.jpg" alt="" />
         <ul class="header-nav">
-          <li><a href="#">网站首页</a></li>
+          <li><a href="#" class="active">网站首页</a></li>
           <li><a href="#">新闻资讯</a></li>
           <li><a href="#">会议活动</a></li>
           <li><a href="#">角马视频</a></li>
@@ -31,7 +31,19 @@
           <li><a href="#">APP下载</a></li>
         </ul>
         <div class="header-search">
-          <img src="./img/search-icon.png" alt="" />
+          <img
+            src="./img/search-icon.png"
+            id="search-btn"
+            onclick="show_dialog_search()"
+            alt=""
+          />
+          <img
+            src="./img/close-icon.png"
+            id="search-close"
+            style="display: none;"
+            onclick="close_dialog_search()"
+            alt=""
+          />
         </div>
         <div class="header-menu" onclick="show_mobile_nav()">=</div>
       </div>
@@ -46,6 +58,14 @@
           <li><a href="#">APP下载</a></li>
         </ul>
         <div class="mobile-close" onclick="close_mobile_nav()">X</div>
+      </div>
+    </div>
+    <div class="dialog-search" id="search">
+      <div class="d-s-form">
+        <input type="text" name="s" placeholder="键入搜索关键词" />
+        <button type="submit" id="btn-search">
+          搜索
+        </button>
       </div>
     </div>
     <div class="swiper-container" id="index-swiper">
@@ -140,7 +160,7 @@
     <div class="pt-12 flex justify-between contain">
       <div class="contain-left">
         <ul>
-          <li><a href="#">推荐·要闻</a></li>
+          <li><a href="#" class="active">推荐·要闻</a></li>
           <li><a href="#">装备制造</a></li>
           <li><a href="#">物资采购</a></li>
           <li><a href="#">供应链</a></li>
@@ -153,7 +173,7 @@
         </ul>
         <div class="c-l-article flex">
           <img
-            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052217291566.jpg"
             alt=""
           />
           <div class="relative">
@@ -166,31 +186,51 @@
             </p>
           </div>
         </div>
+        <div class="c-l-article flex">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052215323413-723x1024.jpg"
+            alt=""
+          />
+          <div class="relative">
+            <h2>
+              <a href="#"
+                >两会 · 国投声音 |
+                国投党组书记、董事长白涛：脱贫之后奔小康，国投帮扶在路上</a
+              >
+            </h2>
+            <div class="c-l-info truncate-2">
+              在全国两会盛大召开之际，2020年5月22日，《人民政协报》专题刊发国投党组书记、董事长白涛寄语，全面报道国...
+            </div>
+            <p>
+              2020-05-22
+            </p>
+          </div>
+        </div>
       </div>
       <div class="contain-right">
         <div class="w-full">
           <h3>角马-视频</h3>
           <img
-            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051910555563.jpg"
             alt=""
           />
           <div class="c-r-video flex justify-between">
             <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051811361017.png"
               alt=""
             />
             <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051815514724.jpg"
               alt=""
             />
           </div>
           <div class="c-r-video flex justify-between">
             <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052213022577.jpg"
               alt=""
             />
             <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052215230936-1024x768.jpg"
               alt=""
             />
           </div>
@@ -198,12 +238,12 @@
         <div class="w-full">
           <h3>供应链管理</h3>
           <img
-            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+            src="http://www.sasac.gov.cn/n2588025/n2588139/c14583612/part/14583623.jpg"
             alt=""
           />
           <div class="c-r-manager mt-12 mb-12 flex justify-between">
             <img
-              src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052216104353.jpg"
+              src="http://www.guozibaogao.com/wp-content/themes/guozi/timthumb.php?src=http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051211154378.jpg&h=75&w=100&zc=1"
               alt=""
             />
             <div class="ml-16">
