@@ -19,6 +19,18 @@ body {
   background: #fff;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 5px 0;
+  position: fixed;
+  top: 0;
+  &.slideUp {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    transition: transform 0.5s ease-out;
+  }
+  &.slideDown {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: transform 0.5s ease-out;
+  }
   .header-content {
     width: 1170px;
     height: 100%;
@@ -50,7 +62,7 @@ body {
 .contain {
   width: 1170px;
   height: fit-content;
-  margin: 0 auto;
+  margin: 80px auto 0;
   img {
     width: 100%;
     height: 360px;
@@ -153,5 +165,13 @@ body {
         color: #9a9a9a;
       }
     }
+  }
+}
+.footer {
+  width: 100%;
+  height: fit-content;
+  .footer-nav {
+    width: 770px;
+    margin: 0 auto;
   }
 }
