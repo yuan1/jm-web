@@ -61,7 +61,7 @@ function jsTask() {
 // JS task: concatenates and uglifies JS files to script.js
 function jsLibTask() {
   return src([
-    // 'node_modules/amfe-flexible/index.js', // 添加依赖js库文件
+    'node_modules/swiper/js/swiper.min.js', // 添加依赖js库文件
     files.jsLibPath, // 添加依赖js库文件
   ])
     .pipe(concat('lib.js'))

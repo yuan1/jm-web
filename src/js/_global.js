@@ -1,4 +1,7 @@
 // Global
+
+// Instantiating the global src object
+var app = {}
 app.global = {
   init: function () {
     // Load all global functions here
