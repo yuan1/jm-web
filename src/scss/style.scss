@@ -281,6 +281,12 @@ body {
         color: #333;
         font-weight: bold;
         margin-bottom: 10px;
+        a {
+          &:hover {
+            color: #366df0;
+            transition: all 0.3s ease;
+          }
+        }
       }
       .c-l-info {
         line-height: 24px;
@@ -319,6 +325,28 @@ body {
       height: 220px;
       object-fit: cover;
     }
+    .c-r-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 8px 15px;
+      margin-left: 0;
+      span {
+        color: #cccccc;
+        font-size: 12px;
+      }
+      h4 {
+        font-size: 15px;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 8px;
+        a {
+          color: #e4e4e4;
+        }
+      }
+    }
     .c-r-video {
       width: 100%;
       margin: 12px 0;
@@ -331,6 +359,7 @@ body {
     .c-r-manager {
       img {
         width: 120px;
+        min-width: 120px;
         height: 90px;
         object-fit: cover;
       }
@@ -339,6 +368,12 @@ body {
         height: 40px;
         overflow: hidden;
         margin-bottom: 16px;
+        a {
+          &:hover {
+            color: #00a7eb;
+            transition: all 0.3s ease;
+          }
+        }
       }
       span {
         font-size: 12px;
