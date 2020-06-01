@@ -89,3 +89,6 @@ function show_dialog_search() {
   document.getElementById('search-btn').style.display = 'none'
   document.getElementById('search').style.display = 'block'
 }
+function open_link(link) {
+  window.open(link)
+}
