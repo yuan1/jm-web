@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- General meta tags needed-->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover"
+    />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css?cb=1583897431037" />
+    <title>角马能源官方网站</title>
+  </head>
+
+  <body>
+    <div class="header" id="header">
+      <div class="header-content flex items-center">
+        <a href="index.html"> <img src="./img/logo.jpg" alt="" /></a>
+        <ul class="header-nav">
+          <li><a href="index.html">网站首页</a></li>
+          <li><a href="#" class="active">新闻资讯</a></li>
+          <li><a href="#">会议活动</a></li>
+          <li><a href="#">角马视频</a></li>
+          <li><a href="#">角马评价</a></li>
+          <li><a href="#">供应商联盟</a></li>
+          <li><a href="#">APP下载</a></li>
+        </ul>
+        <div class="header-search">
+          <img
+            src="./img/search-icon.png"
+            id="search-btn"
+            onclick="show_dialog_search()"
+            alt=""
+          />
+          <img
+            src="./img/close-icon.png"
+            id="search-close"
+            style="display: none;"
+            onclick="close_dialog_search()"
+            alt=""
+          />
+        </div>
+        <div class="header-menu" onclick="show_mobile_nav()">=</div>
+      </div>
+      <div class="mobile-nav" id="mobile">
+        <ul>
+          <li><a href="index.html">网站首页</a></li>
+          <li><a href="#">新闻资讯</a></li>
+          <li><a href="#">会议活动</a></li>
+          <li><a href="#">角马视频</a></li>
+          <li><a href="#">角马评价</a></li>
+          <li><a href="#">供应商联盟</a></li>
+          <li><a href="#">APP下载</a></li>
+        </ul>
+        <div class="mobile-close" onclick="close_mobile_nav()">X</div>
+      </div>
+    </div>
+    <div class="dialog-search" id="search">
+      <div class="d-s-form">
+        <input type="text" name="s" placeholder="键入搜索关键词" />
+        <button type="submit" id="btn-search">
+          搜索
+        </button>
+      </div>
+    </div>
+    <div class="pt-12 flex justify-between contain news">
+      <div class="contain-left">
+        <div class="c-l-article flex relative">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052917080113.png"
+            onclick="open_link('https://www.baidu.com/')"
+            alt=""
+          />
+          <span class="c-l-mark"> <a href="#">公司</a></span>
+          <div class="relative">
+            <h2>
+              <a href="#">新时代健康产业集团：以员工持股实现跃进式发展</a>
+            </h2>
+            <div class="c-l-info truncate-2">
+              文 · 记者 原诗萌 《国资报告》杂志2020年第4期 17年的时间，从产品...
+            </div>
+            <p>
+              2020-05-29
+            </p>
+          </div>
+        </div>
+        <div class="c-l-article flex relative">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052917025588.png"
+            onclick="open_link('https://www.baidu.com/')"
+            alt=""
+          />
+          <span class="c-l-mark"> <a href="#">特殊策划</a></span>
+          <div class="relative">
+            <h2>
+              <a href="#">中节能实业： 打造绿色园区 构建小微企业生态圈</a>
+            </h2>
+            <div class="c-l-info truncate-2">
+              文 · 记者 原诗萌 《国资报告》杂志2020年第4期
+              长江三角洲城市群的规划范围为苏、浙、皖、...
+            </div>
+            <p>
+              2020-05-29
+            </p>
+          </div>
+        </div>
+        <div class="c-l-article flex relative">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052619250246.png"
+            onclick="open_link('https://www.baidu.com/')"
+            alt=""
+          />
+          <span class="c-l-mark"> <a href="#">特殊策划</a></span>
+          <div class="relative">
+            <h2>
+              <a href="#">国民共进新生态：携手共进 竞合图强</a>
+            </h2>
+            <div class="c-l-info truncate-2">
+              一直以来，国内外始终有观点刻意将民营企业与国有企业对立起来。有声音表示对国有经济存在耿耿于怀，认为效...
+            </div>
+            <p>
+              2020-05-26
+            </p>
+          </div>
+        </div>
+        <div class="c-l-article flex relative">
+          <img
+            src="http://www.guozibaogao.com/wp-content/uploads/2019/12/2019120512380648.jpg"
+            onclick="open_link('https://www.baidu.com/')"
+            alt=""
+          />
+          <span class="c-l-mark"> <a href="#">企业家</a></span>
+          <div class="relative">
+            <h2>
+              <a href="#">【专访】中国西电转型：数字化 智能化 相关多元化</a>
+            </h2>
+            <div class="c-l-info truncate-2">
+              一60年来，作为我国输配电装备制造业中的排头兵，中国西电集团承担着促进我国输配电装备技术进步和为国家重点工程
+            </div>
+            <p>
+              2019-12-05
+            </p>
+          </div>
+        </div>
+        <div class="c-l-article flex">
+          <div class="relative">
+            <h2>
+              <a href="#">麦伯良：打造“中国制造”标杆</a>
+            </h2>
+            <div class="c-l-info truncate-2">
+              麦伯良说，中集现在有二十一个世界冠军级产品线，“我自己的目标是退休前做到三十个”。
+              　　文·本刊记者 原诗萌
+              　　1982年2月，春节刚过，深圳蛇口工业区已是一派繁忙...
+            </div>
+            <p>
+              特别策划 2019-03-20
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="contain-right">
+        <div class="w-full">
+          <h3>供应链管理</h3>
+          <div class="relative">
+            <a href="#">
+              <img
+                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020052917025588.png"
+                alt=""
+            /></a>
+            <div class="c-r-title">
+              <span>2020-05-29</span>
+              <h4 class="truncate">
+                <a href="#" title=""
+                  >中节能实业： 打造绿色园区 构建小微企业生态圈</a
+                >
+              </h4>
+            </div>
+          </div>
+
+          <div class="c-r-manager mt-12 mb-12 flex justify-between">
+            <a href="#">
+              <img
+                src="http://www.guozibaogao.com/wp-content/themes/guozi/timthumb.php?src=http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051211154378.jpg&h=75&w=100&zc=1"
+                alt=""
+              />
+            </a>
+            <div class="ml-16">
+              <h4 class="truncate-2">
+                <a href="#">陕汽集团三次创业拼搏以成 四新并进决胜长远</a>
+              </h4>
+              <span>2020-05-21</span>
+            </div>
+          </div>
+          <div class="c-r-manager mt-12 mb-12 flex justify-between">
+            <a href="#">
+              <img
+                src="http://www.guozibaogao.com/wp-content/themes/guozi/timthumb.php?src=http://www.guozibaogao.com/wp-content/uploads/2020/04/2020041721023457.jpeg&h=75&w=100&zc=1"
+                alt=""
+              />
+            </a>
+            <div class="ml-16">
+              <h4 class="truncate-2">
+                <a href="#"
+                  >哈电集团：危难之时，挺起“长子”脊梁——哈电集团奋力夺取疫</a
+                >
+              </h4>
+              <span>2020-04-17</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full news-hot">
+          <h3>最热点击文章</h3>
+          <div>
+            <a href="#">
+              <img
+                src="http://www.guozibaogao.com/wp-content/uploads/2020/05/2020051910555563.jpg"
+                alt=""
+            /></a>
+            <div class="c-r-hot">
+              <h4 class="truncate">
+                <a href="#" title="">西南人百日攻坚创效的一天</a>
+              </h4>
+              <div><span> 2020-05-27</span></div>
+            </div>
+          </div>
+          <div class="mt-12">
+            <a href="#">
+              <img
+                src="http://www.guozibaogao.com/wp-content/uploads/2020/04/2020042912214481.jpg"
+                alt=""
+            /></a>
+            <div class="c-r-hot">
+              <h4 class="truncate">
+                <a href="#" title=""
+                  >习近平总书记两会重要讲话在国企代表委员中引起</a
+                >
+              </h4>
+              <div><span> 2020-05-27</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full news-code">
+          <img
+            src="https://jiaomaenergy.com/templates/jm/img/code.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-nav">
+        <ul class="flex justify-between mb-20">
+          <li><a href="#">关于角马</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">寻求报道</a></li>
+          <li><a href="#">投稿须知</a></li>
+        </ul>
+        <div class="copyright-footer">
+          京ICP备18043511号 Copyright © 2019-2020 JM.energy All Rights Reserved.
+          <a href="#">北京角马能源科技有限公司</a>
+        </div>
+        <div class="link-footer">
+          地址：北京市朝阳区朝阳外大街19号华普国际大厦 电话：010-53561109
+          邮箱：official@jm.energy
+        </div>
+
+        <div class="back-top" id="top-btn">
+          <img src="./img/go_back.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="lib.js?cb=1583897431037"></script>
+    <script src="all.js?cb=1583897431037"></script>
+  </body>
+</html>

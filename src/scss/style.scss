@@ -50,6 +50,7 @@ body {
       display: inline-block;
       list-style: none;
       a {
+        transition: all 0.3s ease;
         &:hover {
           color: #19b5fe;
         }
@@ -255,8 +256,8 @@ body {
         font-size: 14px;
         font-weight: bold;
         padding-right: 20px;
-        transition: all 0.3s ease-in-out;
         a {
+          transition: all 0.3s ease-in-out;
           &:hover {
             color: #333333;
           }
@@ -398,6 +399,69 @@ body {
     }
   }
 }
+.details {
+  padding: 30px 0;
+  .c-l-details {
+    h1 {
+      font-size: 28px;
+    }
+    .c-d-icon {
+      display: block;
+      color: #999999;
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+    p {
+      color: #333333;
+      margin-bottom: 24px;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+  }
+  .c-l-previous {
+    a {
+      transition: all 0.3s ease;
+      &:hover {
+        color: #00a7eb;
+      }
+    }
+  }
+}
+
+.news {
+  margin-top: 68px;
+  .news-hot {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  .news-code {
+    width: 100%;
+    height: 312px;
+    padding-top: 46px;
+    background: #f8f8f8;
+    margin: 24px 0;
+    img {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto;
+    }
+  }
+  .c-r-hot {
+    padding: 10px 15px;
+    a {
+      color: #333333;
+      font-size: 15px;
+    }
+    span {
+      font-size: 12px;
+      overflow: hidden;
+      color: #999;
+    }
+  }
+}
 .footer {
   width: 100%;
   height: fit-content;
@@ -536,11 +600,18 @@ body {
   #index-swiper {
     margin: 120px auto 0 !important;
   }
+  .news {
+    margin: 112px auto 0 !important;
+  }
   .contain-right {
     display: none;
   }
   .contain-left {
     width: 100% !important;
+  }
+  .details {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -610,5 +681,23 @@ body {
   }
   .dialog-search .d-s-form button {
     width: 80px;
+  }
+  .details {
+    padding: 24px 0;
+  }
+  .details .c-l-details {
+    h1 {
+      font-size: 19px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .c-d-icon {
+      font-size: 10px;
+      margin-bottom: 16px;
+      margin-top: 36px;
+    }
   }
 }
