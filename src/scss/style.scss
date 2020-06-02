@@ -291,6 +291,12 @@ body {
         text-align: center;
         border-radius: 12px;
         z-index: 11;
+        a {
+          transition: all 0.3s ease;
+          &:hover {
+            color: #00a7eb;
+          }
+        }
       }
       h2 {
         color: #333;
