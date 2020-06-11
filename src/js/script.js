@@ -58,11 +58,12 @@ top_btn.onclick = function () {
   top_timer = setInterval(function () {
     //获取滚动条距离顶部的高度
     var os_top = document.documentElement.scrollTop || document.body.scrollTop //同时兼容了ie和Chrome浏览器
+    console.log(os_top);
     //减小的速度
-    var isSpeed = Math.floor(-os_top / 6)
+    var is_speed = Math.floor(-os_top / 6)
     document.documentElement.scrollTop = document.body.scrollTop =
-      os_top + isSpeed
-    isTop = true
+      os_top + is_speed;
+    is_top = true
     //判断，然后清除定时器
     if (os_top == 0) {
       clearInterval(top_timer)
