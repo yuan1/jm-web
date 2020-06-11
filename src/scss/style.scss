@@ -469,6 +469,23 @@ body {
     }
   }
 }
+.about{
+  min-height: 680px;
+  margin: 68px auto 32px;
+  padding: 35px 25px;
+  box-shadow: 0 5px 10px 0 rgba(146,146,146,0.1);
+  h1{
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+}
 .footer {
   width: 100%;
   height: fit-content;
@@ -610,6 +627,9 @@ body {
   .news {
     margin: 112px auto 0 !important;
   }
+  .about{
+    margin-top: 112px;
+  }
   .contain-right {
     display: none;
   }
@@ -705,6 +725,20 @@ body {
       font-size: 10px;
       margin-bottom: 16px;
       margin-top: 36px;
+    }
+  }
+  .about{
+    .about-content{
+      margin-top: 35px;
+      h1{
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      p{
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 15px
+      }
     }
   }
 }
